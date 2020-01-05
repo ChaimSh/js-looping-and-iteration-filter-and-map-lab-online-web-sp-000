@@ -23,3 +23,9 @@ function exactMatch(drivers, description) {
     return descr;
   });
 }
+
+function exactMatchToList(drivers, description){
+ return exactMatch(drivers, description).map (function (driver){
+      return driver.name
+ })
+}
